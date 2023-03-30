@@ -28,15 +28,20 @@ namespace ConsoleApp6
 
         }
 
-        class ForCleaning
+        class ForCleaning: IDisposable
         {
+            private int[] arr= new int[10];
             public ForCleaning()
             {
 
             }
             ~ForCleaning()
             {
-
+                
+            }
+            public void Dispose()
+            {
+                throw new NotImplementedException();
             }
         }
     }
